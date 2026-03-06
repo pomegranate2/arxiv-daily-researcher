@@ -16,7 +16,6 @@
     //      science_advances, npj_quantum_information, quantum, new_journal_of_physics
     "enabled": [
       "journal_marine_science_engineering",
-      "sensors_mdpi",
       "ieee_access",
       "neurocomputing",
       "pattern_recognition_letters",
