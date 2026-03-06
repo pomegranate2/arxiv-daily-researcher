@@ -314,7 +314,8 @@ class OpenAlexSource(BasePaperSource):
                 continue
 
             issn_list = journal_info["issn"]
-            journal_name = journal_info["full_name"]
+            # journal_name = journal_info["full_name"]
+            journal_name = journal_info["display_name"]
             display_name = journal_info["display_name"]
 
             logger.info(f"  正在抓取 {journal_name}...")
