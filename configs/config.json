@@ -50,7 +50,13 @@
     // 主要关键词 - 手动指定，相同的高权重
     "primary_keywords": {
       "weight": 1.0, // 所有主要关键词使用相同权重
-      "keywords": [],
+      "keywords": [
+        "underwater acoustic target recognition",
+        "sonar signal classification",
+        "deep learning",
+        "model compression",
+        "acoustic signal processing"
+      ],
     },
     // 是否从 reference_pdfs 目录提取次要关键词
     "enable_reference_extraction": true,
@@ -74,7 +80,7 @@
         }
       }
     },
-    "research_context": ""
+    "research_context": "我的研究方向是水声目标识别与声呐信号处理，重点研究基于深度学习的水声目标分类方法，以及大模型和模型压缩技术在水声识别任务中的应用"
   },
   // 评分设置 - 控制论文评分逻辑
   "scoring_settings": {
