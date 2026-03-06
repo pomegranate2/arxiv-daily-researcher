@@ -57,7 +57,7 @@
       ],
     },
     // 是否从 reference_pdfs 目录提取次要关键词
-    "enable_reference_extraction": true,
+    "enable_reference_extraction": false,
     // Reference PDF 提取的关键词配置
     "reference_keywords_config": {
       "max_keywords": 10, // 从参考文献中最多提取多少个关键词
