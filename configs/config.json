@@ -4,9 +4,9 @@
   // ============================================================
   // 搜索参数 - 控制搜索范围
   "search_settings": {
-    "search_days": 3, // 搜索最近N天的论文。推荐：1(每日) | 7(每周) | 30(每月)
-    "max_results": 70, // 每个数据源最多抓取论文数。推荐：50-200
-    "max_results_per_source": {}, // 按数据源单独配置，如 {"arxiv": 150, "prl": 50}，未指定的源使用 max_results
+    "search_days": 1, // 搜索最近N天的论文。推荐：1(每日) | 7(每周) | 30(每月)
+    "max_results": 60, // 每个数据源最多抓取论文数。推荐：50-200
+    "max_results_per_source": {"sensors_mdpi":20,"arxiv": 100}, // 按数据源单独配置，如 {"arxiv": 150, "prl": 50}，未指定的源使用 max_results
   },
   // 数据源配置 - 控制从哪些来源获取论文
   "data_sources": {
@@ -15,6 +15,7 @@
     //      nature, nature_physics, nature_communications, science,
     //      science_advances, npj_quantum_information, quantum, new_journal_of_physics
     "enabled": [
+      "arxiv",
       "ieee_transactions_signal_processing",
       "signal_processing",
       "journal_marine_science_engineering",
