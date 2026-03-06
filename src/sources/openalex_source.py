@@ -21,51 +21,51 @@ logger = logging.getLogger(__name__)
 
 # 期刊名称到 ISSN 的映射（与 Crossref 保持一致）
 JOURNAL_ISSN_MAP = {
-    # Physical Review 系列
-    "prl": {
-        "full_name": "Physical Review Letters",
-        "issn": ["0031-9007", "1079-7114"],
-        "display_name": "PRL",
-    },
-    "pra": {
-        "full_name": "Physical Review A",
-        "issn": ["2469-9926", "1050-2947"],
-        "display_name": "PRA",
-    },
-    "prb": {
-        "full_name": "Physical Review B",
-        "issn": ["2469-9950", "1098-0121"],
-        "display_name": "PRB",
-    },
-    "prc": {
-        "full_name": "Physical Review C",
-        "issn": ["2469-9985", "0556-2813"],
-        "display_name": "PRC",
-    },
-    "prd": {
-        "full_name": "Physical Review D",
-        "issn": ["2470-0010", "1550-7998"],
-        "display_name": "PRD",
-    },
-    "pre": {
-        "full_name": "Physical Review E",
-        "issn": ["2470-0045", "1539-3755"],
-        "display_name": "PRE",
-    },
-    "prx": {"full_name": "Physical Review X", "issn": ["2160-3308"], "display_name": "PRX"},
-    "prxq": {"full_name": "PRX Quantum", "issn": ["2691-3399"], "display_name": "PRX Quantum"},
-    "rmp": {
-        "full_name": "Reviews of Modern Physics",
-        "issn": ["0034-6861", "1539-0756"],
-        "display_name": "RMP",
-    },
+    # # Physical Review 系列
+    # "prl": {
+    #     "full_name": "Physical Review Letters",
+    #     "issn": ["0031-9007", "1079-7114"],
+    #     "display_name": "PRL",
+    # },
+    # "pra": {
+    #     "full_name": "Physical Review A",
+    #     "issn": ["2469-9926", "1050-2947"],
+    #     "display_name": "PRA",
+    # },
+    # "prb": {
+    #     "full_name": "Physical Review B",
+    #     "issn": ["2469-9950", "1098-0121"],
+    #     "display_name": "PRB",
+    # },
+    # "prc": {
+    #     "full_name": "Physical Review C",
+    #     "issn": ["2469-9985", "0556-2813"],
+    #     "display_name": "PRC",
+    # },
+    # "prd": {
+    #     "full_name": "Physical Review D",
+    #     "issn": ["2470-0010", "1550-7998"],
+    #     "display_name": "PRD",
+    # },
+    # "pre": {
+    #     "full_name": "Physical Review E",
+    #     "issn": ["2470-0045", "1539-3755"],
+    #     "display_name": "PRE",
+    # },
+    # "prx": {"full_name": "Physical Review X", "issn": ["2160-3308"], "display_name": "PRX"},
+    # "prxq": {"full_name": "PRX Quantum", "issn": ["2691-3399"], "display_name": "PRX Quantum"},
+    # "rmp": {
+    #     "full_name": "Reviews of Modern Physics",
+    #     "issn": ["0034-6861", "1539-0756"],
+    #     "display_name": "RMP",
+    # },
     # Nature 系列
     "nature": {"full_name": "Nature", "issn": ["0028-0836", "1476-4687"], "display_name": "Nature"},
-    "nature_physics": {
-        "full_name": "Nature Physics",
-        "issn": ["1745-2473", "1745-2481"],
-        "display_name": "Nat. Phys.",
-    },
+    # "nature_physics": {
+    #     "full_name": "Nature Physics",
+    #     "issn": ["1745-2473", "1745-2481"],
+    #     "display_name": "Nat. Phys.",
+    # },
     "nature_communications": {
         "full_name": "Nature Communications",
         "issn": ["2041-1723"],
@@ -83,16 +83,115 @@ JOURNAL_ISSN_MAP = {
         "display_name": "Sci. Adv.",
     },
     # 其他重要期刊
-    "npj_quantum_information": {
-        "full_name": "npj Quantum Information",
-        "issn": ["2056-6387"],
-        "display_name": "npj QI",
+    # "npj_quantum_information": {
+    #     "full_name": "npj Quantum Information",
+    #     "issn": ["2056-6387"],
+    #     "display_name": "npj QI",
+    # },
+    # "quantum": {"full_name": "Quantum", "issn": ["2521-327X"], "display_name": "Quantum"},
+    # "new_journal_of_physics": {
+    #     "full_name": "New Journal of Physics",
+    #     "issn": ["1367-2630"],
+    #     "display_name": "NJP",
+
+    "journal_marine_science_engineering": {
+        "issn": ["2077-1312"],
+        "display_name": "Journal of Marine Science and Engineering",
     },
-    "quantum": {"full_name": "Quantum", "issn": ["2521-327X"], "display_name": "Quantum"},
-    "new_journal_of_physics": {
-        "full_name": "New Journal of Physics",
-        "issn": ["1367-2630"],
-        "display_name": "NJP",
+
+    "applied_sciences_mdpi": {
+        "issn": ["2076-3417"],
+        "display_name": "Applied Sciences",
+    },
+
+    "remote_sensing_mdpi": {
+        "issn": ["2072-4292"],
+        "display_name": "Remote Sensing",
+    },
+
+    "sensors_mdpi": {
+        "issn": ["1424-8220"],
+        "display_name": "Sensors",
+    },
+
+    "ieee_access": {
+        "issn": ["2169-3536"],
+        "display_name": "IEEE Access",
+    },
+
+    "neurocomputing": {
+        "issn": ["0925-2312", "1872-8286"],
+        "display_name": "Neurocomputing",
+    },
+
+    "pattern_recognition_letters": {
+        "issn": ["0167-8655", "1872-7344"],
+        "display_name": "Pattern Recognition Letters",
+    },
+
+    "signal_processing": {
+        "issn": ["0165-1684", "1872-7557"],
+        "display_name": "Signal Processing",
+    },
+
+    "measurement_journal": {
+        "issn": ["0263-2241", "1873-412X"],
+        "display_name": "Measurement",
+    },
+
+    "eurasip_journal_signal_processing": {
+        "issn": ["1687-6180"],
+        "display_name": "EURASIP Journal on Advances in Signal Processing",
+    },
+
+    "jasa_express_letters": {
+        "issn": ["2691-1191"],
+        "display_name": "JASA Express Letters",
+    },
+
+    "ieee_journal_oceanic_engineering": {
+        "issn": ["0364-9059", "1558-1691"],
+        "display_name": "IEEE Journal of Oceanic Engineering",
+    },
+
+    "ocean_engineering": {
+        "issn": ["0029-8018", "1873-5258"],
+        "display_name": "Ocean Engineering",
+    },
+
+    "china_ocean_engineering": {
+        "issn": ["0890-5487", "2191-8945"],
+        "display_name": "China Ocean Engineering",
+    },
+
+    "ieee_transactions_signal_processing": {
+        "issn": ["1053-587X", "1941-0476"],
+        "display_name": "IEEE Transactions on Signal Processing",
+    },
+    
+    "engineering_applications_ai": {
+        "issn": ["0952-1976", "1873-6769"],
+        "display_name": "Engineering Applications of Artificial Intelligence",
+    },
+
+    "information_sciences": {
+        "issn": ["0020-0255", "1872-6291"],
+        "display_name": "Information Sciences",
+    },
+
+    "neural_networks": {
+        "issn": ["0893-6080", "1879-2782"],
+        "display_name": "Neural Networks",
+    },
+
+    "ieee_transactions_neural_networks_learning_systems": {
+        "issn": ["2162-237X", "2162-2388"],
+        "display_name": "IEEE Transactions on Neural Networks and Learning Systems",
+    },
+
+    "pattern_recognition": {
+        "issn": ["0031-3203", "1873-5142"],
+        "display_name": "Pattern Recognition",
     },
 }
 
