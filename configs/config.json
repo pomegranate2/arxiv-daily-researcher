@@ -16,7 +16,22 @@
     //      science_advances, npj_quantum_information, quantum, new_journal_of_physics
     "enabled": [
       "arxiv",
-      "prl"
+      "nature",
+      "nature_communications",
+      "journal_marine_science_engineering",
+      "sensors_mdpi",
+      "ieee_access",
+      "neurocomputing",
+      "pattern_recognition_letters",
+      "signal_processing",
+      "ieee_journal_oceanic_engineering",
+      "ocean_engineering",
+      "china_ocean_engineering",
+      "ieee_transactions_signal_processing",
+      "engineering_applications_ai",
+      "neural_networks",
+      "ieee_transactions_neural_networks_learning_systems",
+      "pattern_recognition"
     ],
     "journals": [], // 额外的期刊列表（除了 enabled 中指定的）
     // 是否按数据源分目录存放报告
@@ -27,7 +42,7 @@
   "target_domains": {
     // Arxiv分类代码列表。完整列表：https://arxiv.org/category_taxonomy
     "domains": [
-      "quant-ph"
+      "cs.AI","cs.SD","cs.LG","eess.SP"
     ]
   },
   // 关键词配置 - 主要和次要关键词及其权重
