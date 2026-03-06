@@ -15,19 +15,16 @@
     //      nature, nature_physics, nature_communications, science,
     //      science_advances, npj_quantum_information, quantum, new_journal_of_physics
     "enabled": [
+      "ieee_transactions_signal_processing",
+      "signal_processing",
       "journal_marine_science_engineering",
       "ieee_access",
       "neurocomputing",
-      "pattern_recognition_letters",
-      "signal_processing",
+      "ieee_transactions_neural_networks_learning_systems",
       "ieee_journal_oceanic_engineering",
       "ocean_engineering",
       "china_ocean_engineering",
-      "ieee_transactions_signal_processing",
-      "engineering_applications_ai",
-      "neural_networks",
-      "ieee_transactions_neural_networks_learning_systems",
-      "pattern_recognition"
+      "sensors_mdpi"
     ],
     "journals": [], // 额外的期刊列表（除了 enabled 中指定的）
     // 是否按数据源分目录存放报告
