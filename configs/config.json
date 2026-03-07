@@ -86,7 +86,7 @@
     // 公式：及格分 = base_score + weight_coefficient × Σ(关键词权重)
     // 例如：5个主要关键词(权重1.0) → 及格分 = 5.0 + 3.0×5 = 20.0
     "passing_score_formula": {
-      "base_score": 5.0, // 基础及格分
+      "base_score": 3.0, // 基础及格分
       "weight_coefficient": 3.0, // 权重系数 α
     },
     "include_all_in_report": true, // 是否在报告中包含所有论文的评分结果
