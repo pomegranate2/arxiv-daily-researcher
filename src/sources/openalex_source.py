@@ -165,7 +165,7 @@ JOURNAL_ISSN_MAP = {
     },
 
     "ieee_transactions_signal_processing": {
-        "issn": ["1053-587X", "1941-0476"],
+        "issn": ["1941-0476"],
         "display_name": "IEEE Transactions on Signal Processing",
     },
     
