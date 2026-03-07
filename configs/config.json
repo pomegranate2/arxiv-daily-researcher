@@ -15,10 +15,12 @@
     //      nature, nature_physics, nature_communications, science,
     //      science_advances, npj_quantum_information, quantum, new_journal_of_physics
     "enabled": [
+      "arxiv",
       "ieee_transactions_signal_processing",
       "signal_processing",
       "ieee_access",
-      "ieee_transactions_neural_networks_learning_systems",
+      "ieee_journal_oceanic_engineering",
+      "ocean_engineering",
       "ieee_journal_oceanic_engineering",
     ],
     "journals": [], // 额外的期刊列表（除了 enabled 中指定的）
@@ -136,7 +138,7 @@
     "enabled": true, // 总开关（还需在 .env 中配置具体渠道的密钥/URL）
     "on_success": true, // 成功时发送通知
     "on_failure": true, // 失败时发送通知
-    "attach_reports": false, // 邮件是否附带报告文件
+    "attach_reports": true, // 邮件是否附带报告文件
     "top_n": 5, // 通知中包含的 Top-N 高分论文摘要数量
     "channels": {
       "email": {
