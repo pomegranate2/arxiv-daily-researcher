@@ -6,7 +6,7 @@
   "search_settings": {
     "search_days": 3, // 搜索最近N天的论文。推荐：1(每日) | 7(每周) | 30(每月)
     "max_results": 60, // 每个数据源最多抓取论文数。推荐：50-200
-    "max_results_per_source": {"sensors_mdpi":20,"arxiv": 50}, // 按数据源单独配置，如 {"arxiv": 150, "prl": 50}，未指定的源使用 max_results
+    "max_results_per_source": {"arxiv": 30}, // 按数据源单独配置，如 {"arxiv": 150, "prl": 50}，未指定的源使用 max_results
   },
   // 数据源配置 - 控制从哪些来源获取论文
   "data_sources": {
@@ -142,7 +142,7 @@
     "top_n": 5, // 通知中包含的 Top-N 高分论文摘要数量
     "channels": {
       "email": {
-        "enabled": false
+        "enabled": true
       },
       "wechat_work": {
         "enabled": false
@@ -174,7 +174,7 @@
   },
   // 并发配置 - LLM 评分和深度分析的并发设置
   "concurrency": {
-    "enabled": false, // 是否启用并发（注意API速率限制）
+    "enabled": true, // 是否启用并发（注意API速率限制）
     "workers": 3 // 并发线程数（建议不超过5）
   },
   // PDF 解析配置 - 控制如何解析论文 PDF
