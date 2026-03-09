@@ -60,6 +60,7 @@ jobs:
           TELEGRAM_CHAT_ID=${{ secrets.TELEGRAM_CHAT_ID }}
           SLACK_WEBHOOK_URL=${{ secrets.SLACK_WEBHOOK_URL }}
           GENERIC_WEBHOOK_URL=${{ secrets.GENERIC_WEBHOOK_URL }}
+          MINERU_API_KEY=${{ secrets. MINERU_API_KEY }}
           ENVEOF
 
       - name: Restore previous data
